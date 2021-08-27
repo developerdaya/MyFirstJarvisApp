@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#0e2225"
+
+    tools:context=".SplashScreen">
+
+
+        //here is the code of GifImageView
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@raw/gif1" />
+
+        <ImageView
+            android:id="@+id/splashLogo"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/jarvish_logo2"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/gifImageView"
+            app:layout_constraintEnd_toStartOf="@+id/gifImageView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/gifImageView"
+            app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
